@@ -29,6 +29,8 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 	City city;
 	Tanks tanks;
 	Fire fire;
+	
+	int points;
 
 	int xLeft, yLeft, xRight, yRight, xBulletLeft, yBulletLeft, xBulletRight, yBulletRight;
 	int leftAngle, rightAngle;
@@ -40,6 +42,8 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 	public MainPage() {
 
 		setLayout(null);
+		
+		points = 20;
 
 		chance = -2;
 
@@ -178,7 +182,7 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 					}
 
 					if (tanks.collide(xRight, yRight, xBulletLeft, yBulletLeft)) {
-						scoreRight -= 100;
+						scoreRight -= points;
 						showBulletLeft = false;
 						break;
 					}
@@ -212,7 +216,7 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 					}
 
 					if (tanks.collide(xLeft, yLeft, xBulletRight, yBulletRight)) {
-						scoreLeft -= 100;
+						scoreLeft -= points;
 						showBulletRight = false;
 						break;
 					}
@@ -299,7 +303,7 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 				}
 
 				if (tanks.collide(xRight, yRight, xBulletLeft, yBulletLeft)) {
-					scoreRight -= 100;
+					scoreRight -= points;
 					showBulletLeft = false;
 					break;
 				}
@@ -335,7 +339,7 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 				}
 
 				if (tanks.collide(xLeft, yLeft, xBulletRight, yBulletRight)) {
-					scoreLeft -= 100;
+					scoreLeft -= points;
 					showBulletRight = false;
 					break;
 				}
