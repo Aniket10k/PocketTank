@@ -2,12 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="bombs"/>
 	<classpathentry kind="src" path="screenshots"/>
-	<classpathentry kind="src" path="buildings"/>
-	<classpathentry kind="src" path="sound"/>
-	<classpathentry kind="src" path="backgrounds"/>
-	<classpathentry kind="src" path="tanks"/>
-	<classpathentry kind="src" path="images"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

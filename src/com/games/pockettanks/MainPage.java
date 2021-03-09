@@ -77,14 +77,14 @@ public class MainPage extends JPanel implements KeyListener, ActionListener {
 		refresh.setBounds(this.getWidth() - 80, 10, 50, 20);
 		
 		try {
-			blackBackground =  ImageIO.read(new File("backgrounds/black.jpeg"));
-			background = ImageIO.read(new File("backgrounds/redsky.jpg"));
+			blackBackground =  ImageIO.read(new File("src/backgrounds/black.jpeg"));
+			background = ImageIO.read(new File("src/backgrounds/redsky.jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		try {
-			launch = AudioSystem.getAudioInputStream(new File("sound/launch.wav"));
+			launch = AudioSystem.getAudioInputStream(new File("src/sound/launch.wav"));
 		} catch (UnsupportedAudioFileException | IOException e) {
 			e.printStackTrace();
 		}

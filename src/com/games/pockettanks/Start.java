@@ -40,8 +40,8 @@ public class Start extends JFrame implements ActionListener {
 		add(t1);
 		add(t2);
 		setLayout(null);
-		img3 = ImageIO.read(new File("images/smalltank.jpg"));
-		img2 = ImageIO.read(new File("images/smalltank.jpg"));
+		img3 = ImageIO.read(new File("src/images/smalltank.jpg"));
+		img2 = ImageIO.read(new File("src/images/smalltank.jpg"));
 		b1.setFocusable(true);
 		b2.setFocusable(true);
 		setSize(1400, 800);

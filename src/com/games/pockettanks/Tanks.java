@@ -12,10 +12,10 @@ public class Tanks extends Rectangle {
 	Block cannonLeft, cannonRight;
 
 	public Tanks(int xLeft, int yLeft, int xRight, int yRight) {
-		tankLeft = new Block(xLeft, yLeft, 100, 50, "tanks/leftTankNo.png");
-		tankRight = new Block(xRight, yRight, 100, 50, "tanks/rightTankNo.png");
-		cannonLeft = new Block(xLeft + 62, yLeft - 8, 60, 60, "tanks/leftCanon.png");
-		cannonRight = new Block(xRight - 20, yRight - 5, 60, 60, "tanks/rightCanon.png");
+		tankLeft = new Block(xLeft, yLeft, 100, 50, "src/tanks/leftTankNo.png");
+		tankRight = new Block(xRight, yRight, 100, 50, "src/tanks/rightTankNo.png");
+		cannonLeft = new Block(xLeft + 62, yLeft - 8, 60, 60, "src/tanks/leftCanon.png");
+		cannonRight = new Block(xRight - 20, yRight - 5, 60, 60, "src/tanks/rightCanon.png");
 	}
 
 	public void drawLeftTank(Graphics g, int x, int y, Component c, int angle) {
