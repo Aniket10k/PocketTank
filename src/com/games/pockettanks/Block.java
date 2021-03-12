@@ -6,7 +6,6 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.geom.AffineTransform;
-import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -26,7 +25,7 @@ public class Block extends Rectangle {
 		this.height = h;
 		this.rectangle = new Rectangle(x, y, w, h);
 		try {
-			pic = ImageIO.read(new File(path));
+			pic = ImageIO.read(Main.class.getResource(path));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

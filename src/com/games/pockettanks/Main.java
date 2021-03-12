@@ -3,7 +3,9 @@ package com.games.pockettanks;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -12,13 +14,19 @@ public class Main {
 	JButton startButton;
 	StartPage sp;
 	MainPage mp;
-	
 
 	public Main() {
 
 		JFrame frame = new JFrame("Pocket Tank");
 		mp = new MainPage();
 		
+		try {
+			frame.setIconImage(ImageIO.read(Main.class.getResource("/resources/tanks/tank.jpg")));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
 		startButton = new JButton("Start Game");
 		startButton.setBounds(500, 450, 200, 50);
 		startButton.setFocusable(true);

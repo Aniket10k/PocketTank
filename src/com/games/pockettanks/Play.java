@@ -42,8 +42,8 @@ public class Play extends JFrame implements KeyListener {
 		setLayout(null);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		String soundName = "src/sound/d.wav";
-		String sound2 = "src/sound/sound1.wav";
+		String soundName = "/resources/sound/d.wav";
+		String sound2 = "/resources/sound/sound1.wav";
 		AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile());
 		AudioInputStream audioInputStream2 = AudioSystem.getAudioInputStream(new File(sound2).getAbsoluteFile());
 		Clip clip = AudioSystem.getClip();
@@ -127,13 +127,13 @@ public class Play extends JFrame implements KeyListener {
 				timer.start();
 			}
 		});
-		img1 = ImageIO.read(new File("src/images/tankfinal.png"));
-		img2 = ImageIO.read(new File("src/images/tankfinal2.png"));
-		img3 = ImageIO.read(new File("src/images/finalgun1.png"));
-		img4 = ImageIO.read(new File("src/images/finalgun2.png"));
-		img5 = ImageIO.read(new File("src/images/finalground1.png"));
-		img6 = ImageIO.read(new File("src/images/hill.png"));
-		img7 = ImageIO.read(new File("src/images/back4.png"));
+		img1 = ImageIO.read(new File("/resources/images/tankfinal.png"));
+		img2 = ImageIO.read(new File("/resources/images/tankfinal2.png"));
+		img3 = ImageIO.read(new File("/resources/images/finalgun1.png"));
+		img4 = ImageIO.read(new File("/resources/images/finalgun2.png"));
+		img5 = ImageIO.read(new File("/resources/images/finalground1.png"));
+		img6 = ImageIO.read(new File("/resources/images/hill.png"));
+		img7 = ImageIO.read(new File("/resources/images/back4.png"));
 		addKeyListener(this);
 		b1.setFocusable(true);
 		b2.setFocusable(true);
